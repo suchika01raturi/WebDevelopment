@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- end google fonts -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Explore</title>
+</head>
+<body>
+  <header class="f-header position-relative js-f-header">
+    <div class="f-header__mobile-content container max-width-lg">
+      <a href="index.html" class="f-header__logo">
+        <svg width="104" height="30" viewBox="0 0 104 30"><title>Go to homepage</title><path d="M37.54 24.08V3.72h4.92v16.37h8.47v4zM60.47 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8 8 0 015.64-2.18 8.07 8.07 0 015.68 2.2 8.49 8.49 0 012 5.69 8.63 8.63 0 01-1.78 5.38 7.6 7.6 0 01-5.89 2.49zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.79 3-2.79 4.26.32 4.23 2.82 4.23zM95.49 24.37a7.82 7.82 0 01-5.73-2.25 8.36 8.36 0 01-2-5.62 8.32 8.32 0 012.08-5.71 8.4 8.4 0 0111.31 0 8.43 8.43 0 012 5.69 8.6 8.6 0 01-1.77 5.38 7.6 7.6 0 01-5.89 2.51zm0-3.67c2.42 0 2.73-3 2.73-4.23s-.31-4.26-2.73-4.26-2.8 3-2.8 4.26.31 4.23 2.83 4.23zM77.66 30c-5.74 0-7-3.25-7.23-4.52l4.6-.26c.41.91 1.17 1.41 2.76 1.41a2.45 2.45 0 002.82-2.53v-2.68a7 7 0 01-1.7 1.75 6.12 6.12 0 01-5.85-.08c-2.41-1.37-3-4.25-3-6.66 0-.89.12-3.67 1.45-5.42a5.67 5.67 0 014.64-2.4c1.2 0 3 .25 4.46 2.82V8.81h4.85v15.33a5.2 5.2 0 01-2.12 4.32A9.92 9.92 0 0177.66 30zm.15-9.66c2.53 0 2.81-2.69 2.81-3.91s-.31-4-2.81-4-2.81 2.8-2.81 4 .27 3.91 2.81 3.91zM55.56 3.72h9.81v2.41h-9.81z" fill="var(--color-contrast-higher)"/><circle cx="15" cy="15" r="15" fill="var(--color-primary)"/></svg>
+      </a>
+  
+      <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
+        <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+      </button>
+    </div>
+  
+    <div class="f-header__nav" role="navigation">
+      <div class="f-header__nav-grid justify-between@md container max-width-lg">
+        <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
+          <a href="index.html" class="f-header__logo">
+            <svg width="104" height="170" viewBox="0 0 104 30" xmlns="http://www.w3.org/2000/svg">
+              <title>Home</title>
+              <image href="assets/img/logo.png" width="104" height="100" />
+            </svg>
+          </a>
+        </div>
+        
+    
+        <ul class="f-header__list flex-grow flex-basis-0 justify-center@md">
+          <li class="f-header__item">
+            <a href="solutions.html" class="f-header__link" aria-current="page">
+              <span>Solutions</span>
+              <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12"><path d="M9.943,4.269A.5.5,0,0,0,9.5,4h-7a.5.5,0,0,0-.41.787l3.5,5a.5.5,0,0,0,.82,0l3.5-5A.5.5,0,0,0,9.943,4.269Z"/></svg>
+            </a>
+  
+            <ul class="f-header__dropdown">
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item One</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Two</a></li>
+              <li><a href="#0" class="f-header__dropdown-link">Sub Nav Item Three</a></li>
+            </ul>
+          </li>
+          <li class="f-header__item"><a href="pricing.html" class="f-header__link">Pricing</a></li>
+          <li class="f-header__item"><a href="blog.html" class="f-header__link">Blog</a></li>
+          <li class="f-header__item"><a href="blog-article.html" class="f-header__link">Article</a></li>
+          <li class="f-header__item"><a href="contact.html" class="f-header__link">Contact</a></li>
+        </ul>
+    
+        <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
+          <li class="f-header__item">
+            <a href="#0" class="f-header__link f-header__link--icon" aria-label="Follow us on Twitter">
+              <svg class="icon" viewBox="0 0 32 32"><g><path d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3 c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,10.8,5.5,8.2,2.2,4.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5 c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.4,29,10.1,29c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z"></path></g></svg>
+              <span class="margin-left-xxs">Follow us on Twitter</span>
+            </a>
+          </li>
+  
+          <li class="f-header__item">
+            <a href="#0" class="f-header__link f-header__link--icon" aria-label="Follow us on Facebook">
+                <svg class="icon" viewBox="0 0 32 32"><path d="M32,16A16,16,0,1,0,13.5,31.806V20.625H9.438V16H13.5V12.475c0-4.01,2.389-6.225,6.043-6.225a24.644,24.644,0,0,1,3.582.312V10.5H21.107A2.312,2.312,0,0,0,18.5,13v3h4.438l-.71,4.625H18.5V31.806A16,16,0,0,0,32,16Z"></path></svg>
+              <span class="margin-left-xxs">Follow us on Facebook</span>
+            </a>
+          </li>
+  
+          <li class="f-header__item">
+            <a href="#0" class="f-header__link f-header__link--icon" aria-label="Follow us on Youtube">
+              <svg class="icon" viewBox="0 0 32 32"><path d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3 c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4 C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4 C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z"></path></svg>
+              <span class="margin-left-xxs">Follow us on Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- features -->
+  <section class="feature-v9 ">
+    <div class="grid">
+      <div class="feature-v9__block col-6@md" style="background-image: url('assets/img/treks.jpg');">
+        <div class="feature-v9__content text-center max-width-xxxs">
+          <div class="text-component">
+            <h2 class="text-xxl color-inherit">Treks in Uttarakhand</h2>
+            <p class="opacity-90%">Trekking in Uttarakhand is a fantastic experience with its diverse landscapes, stunning Himalayan peaks, lush forests, and pristine lakes. Here are some popular treks you might consider-</p>
+          </div>
+  
+          <div class="margin-top-sm"><a class="feature-v9__link" href="treks.html">Explore</a></div> 
+        </div>
+      </div>
+  
+      <div class="feature-v9__block col-6@md" style="background-image: url('assets/img/temple.jpg');">
+        <div class="feature-v9__content text-center max-width-xxxs">
+          <div class="text-component">
+            <h2 class="text-xxl color-inherit">Temples in Uttarakhand</h2>
+            <p class="opacity-90%">Uttarakhand is known for its rich spiritual and religious heritage, and it's home to several important temples and pilgrimage sites. Here are some notable temples in Uttarakhand that are worth visiting:</p>
+          </div>
+  
+          <div class="margin-top-sm"><a class="feature-v9__link" href="temples.html">Explore</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- timeline -->
+  <div class="position-relative z-index-1 overflow-hidden padding-y-xl bg-dark">
+    <div class="margin-bottom-lg">
+      <h1 class="text-center">Popular Travel Packages</h1>
+    </div>    
+    <div class="container max-width-adaptive-lg">      
+      <div class="v-timeline js-v-timeline" data-animation="on">
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm"></div>    
+              <div class="text-component">
+                <h2>Char Dham Yatra</h2>                
+                <p>Uttarakhand is known as Dev Bhoomi that is Land of Gods. The pilgrimage of 4 Dhams located in Garhwal region are considered the most sacred places in India: 
+                  Badrinath, Kedarnath, Gangotri and Yamunotri.</p>
+              </div>              
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="first.html">Read More</a>
+              </div>
+              <div style="text-align: right;">
+                <div style="width: 500px; height: auto; margin-left: 200px; margin-left: 20px;">
+                  <img src="assets/img/chardham-yatra.jpg" alt="Image" style="width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>                     
+          </div>          
+        </section>         
+
+        <section class="v-timeline__section js-v-timeline__section">
+          <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+    
+          <div class="v-timeline__items-group">
+            <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+              <div class="v-timeline__date margin-bottom-sm">
+                
+              </div>
+    
+              <div class="text-component">
+                <h2>Auli Trek</h2>
+      
+                <p>Winter trek to Auli is probably one of the best ways to explore the beauty of Garhwal Himalayas. 
+                  It is the confluence of two prominent rivers of Uttarakhand, Bhagirathi and Alaknanda. </p>
+              </div>                  
+              <div class="margin-top-md">
+                <a class="btn btn--primary" href="second.html">Read More</a>
+              </div>
+              <div style="text-align: right;">
+                <div style="width: 500px; height: auto; margin-left: 200px; margin-left: 20px;">
+                  <img src="assets/img/auli-trek.jpg" alt="Image" style="width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container max-width-adaptive-lg">
+          <div class="v-timeline js-v-timeline" data-animation="on">
+            <section class="v-timeline__section js-v-timeline__section">
+              <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+        
+              <div class="v-timeline__items-group">
+                <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+                  <div class="v-timeline__date margin-bottom-sm">
+                    
+                  </div>
+        
+                  <div class="text-component">
+                    <h2>Surkanda Devi </h2>
+          
+                    <p>Surkanda Devi Temple is located near Dhanolti in the Unniyal Village of Tehri district of Uttarakhand. 
+                      The trek starts from Dhanolti and there is a well laid trail throughout.</p>
+                  </div>
+        
+                  <div class="margin-top-md">
+                    <a class="btn btn--primary" href="third.html">Read More</a>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="width: 500px; height: auto; margin-left: 200px; margin-left: 20px;">
+                      <img src="assets/img/surkanda.jpg" alt="Image" style="width: 100%; height: auto;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="v-timeline__section js-v-timeline__section">
+              <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+        
+              <div class="v-timeline__items-group">
+                <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+                  <div class="v-timeline__date margin-bottom-sm">
+                    
+                  </div>
+        
+                  <div class="text-component">
+                    <h2>Chopta Tungnath Trek</h2>
+          
+                    <p>Tungnath trek is short and easy, which runs parallel to the high-altitude Himalayan Treks. 
+                      During winter it would be appealing to all eyes since the thick cover of snow will be an amusing part of the region.</p>
+                  </div>
+        
+                  <div class="margin-top-md">
+                    <a class="btn btn--primary" href="fourth.html">Read More</a>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="width: 500px; height: auto; margin-left: 200px; margin-left: 20px;">
+                      <img src="assets/img/chopta.jpg" alt="Image" style="width: 100%; height: auto;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>    
+        
+        
+  
+            <div class="container max-width-adaptive-lg">
+              <div class="v-timeline js-v-timeline" data-animation="on">
+                <section class="v-timeline__section js-v-timeline__section">
+                  <div class="v-timeline__marker bg-contrast-high border border-3 border-bg-dark" aria-hidden="true"></div>
+            
+                  <div class="v-timeline__items-group">
+                    <div class="v-timeline__item bg-light padding-md radius-md shadow-xs">
+                      <div class="v-timeline__date margin-bottom-sm">
+                        
+                      </div>
+            
+                      <div class="text-component">
+                        <h2>Har ki Dun Trek</h2>
+              
+                        <p>The Har Ki Doon Trek is a stairway to heaven that will make you fall for its beauty.Har Ki Dun catchment area is 
+                          a major source of the Yamuna River System and the main source of the largest tributary of Yamuna.</p>
+                      </div>
+            
+                      <div class="margin-top-md">
+                        <a class="btn btn--primary" href="fifth.html">Read More</a>
+                      </div>
+                      <div style="text-align: right;">
+                        <div style="width: 500px; height: auto; margin-left: 200px; margin-left: 20px;">
+                          <img src="assets/img/harkidun.jpg" alt="Image" style="width: 100%; height: auto;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="v-timeline__section js-v-timeline__section">
+      </div>
+      
+    </div>
+  </div>
+  
+
+  
+  <!-- accordion -->
+  <section class="position-relative z-index-1 padding-y-xxl" data-theme="dark">
+    <div class="container max-width-sm position-relative z-index-2">
+      <div class="margin-bottom-lg">
+        <h1 class="text-center">Common Questions <em class="font-italic">&amp;</em> Answers</h1>
+      </div>
+  
+      <ul class="accordion  js-accordion" data-animation="on" data-multi-items="on">
+        <li class="accordion__item  js-accordion__item">
+          <button class="reset accordion__header padding-y-sm padding-x-md js-tab-focus" type="button">
+            <span class="text-md">What is trekking?</span>
+  
+            <svg class="icon accordion__icon-arrow-v2 no-js:is-hidden" viewBox="0 0 16 16" aria-hidden="true">
+              <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10">
+                <path d="M2 2l12 12" />
+                <path d="M14 2L2 14" />
+              </g>
+            </svg>
+          </button>
+  
+          <div class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel">
+            <div class="text-component">
+              <p>Trekking is an outdoor activity of walking for more than a day. It is a form of walking, undertaken with the specific 
+                purpose of exploring and enjoying the scenery. Trekking could be a motive, It could be a commitment, an aim, an 
+                objective, a mission, a party, a social gathering.</p>
+            </div>
+          </div>
+        </li>
+  
+        <li class="accordion__item  js-accordion__item">
+          <button class="reset accordion__header padding-y-sm padding-x-md js-tab-focus" type="button">
+            <span class="text-md">How do I choose a trekking destination ?</span>
+  
+            <svg class="icon accordion__icon-arrow-v2 no-js:is-hidden" viewBox="0 0 16 16" aria-hidden="true">
+              <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10">
+                <path d="M2 2l12 12" />
+                <path d="M14 2L2 14" />
+              </g>
+            </svg>
+          </button>
+  
+          <div class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel">
+            <div class="text-component">
+              <p>Consider factors such as difficulty level, season/weather, travel logistics, and personal interests like mountains, 
+                forests, coastal areas,etc.</p>
+            </div>
+          </div>
+        </li>
+  
+        <li class="accordion__item  js-accordion__item">
+          <button class="reset accordion__header padding-y-sm padding-x-md js-tab-focus" type="button">
+            <span class="text-md">Are trekking packages suitable for beginners? </span>
+  
+            <svg class="icon accordion__icon-arrow-v2 no-js:is-hidden" viewBox="0 0 16 16" aria-hidden="true">
+              <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10">
+                <path d="M2 2l12 12" />
+                <path d="M14 2L2 14" />
+              </g>
+            </svg>
+          </button>
+  
+          <div class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel">
+            <div class="text-component">
+              <p>Yes, many trekking companies offer packages tailored to beginners with easier routes and proper guidance from 
+                experienced guides.</p>
+            </div>
+          </div>
+        </li>
+  
+        <li class="accordion__item  js-accordion__item">
+          <button class="reset accordion__header padding-y-sm padding-x-md js-tab-focus" type="button">
+            <span class="text-md">What is the best time of year for trekking packages?</span>
+  
+            <svg class="icon accordion__icon-arrow-v2 no-js:is-hidden" viewBox="0 0 16 16" aria-hidden="true">
+              <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10">
+                <path d="M2 2l12 12" />
+                <path d="M14 2L2 14" />
+              </g>
+            </svg>
+          </button>
+  
+          <div class="accordion__panel padding-top-xxs padding-x-md padding-bottom-md js-accordion__panel">
+            <div class="text-component">
+              <p>The best time for trekking depends on the destination. Research the climate and weather conditions to choose a 
+                suitable season for your trek.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <figure class="bg-decoration z-index-1" aria-hidden="true">
+      <svg class="bg-decoration__svg color-contrast-low" viewBox="0 0 1920 450" fill="none">
+        <rect opacity="0.5" x="1410.61" y="42.6123" width="246.643" height="304.604"
+          transform="rotate(-45 1410.61 42.6123)" fill="url(#bg-decoration-v1-fx-1-linear-1)" />
+        <rect opacity="0.5" x="1176" y="-20.5969" width="246.643" height="304.604" transform="rotate(-45 1176 -20.5969)"
+          fill="url(#bg-decoration-v1-fx-1-linear-2)" />
+        <circle opacity="0.5" cx="1572" cy="205" r="46" fill="url(#bg-decoration-v1-fx-1-radial-1)" />
+        <g opacity="0.5" filter="url(#bg-decoration-v1-fx-1-blur-1)">
+          <circle cx="1680" cy="324" r="26" fill="var(--color-primary)" />
+        </g>
+        <defs>
+          <filter id="bg-decoration-v1-fx-1-blur-1" x="1644" y="288" width="72" height="72" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur" />
+          </filter>
+          <linearGradient id="bg-decoration-v1-fx-1-linear-1" x1="1533.93" y1="42.6123" x2="1533.93" y2="347.217"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+          <linearGradient id="bg-decoration-v1-fx-1-linear-2" x1="1299.32" y1="-20.5969" x2="1299.32" y2="284.007"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="currentColor" />
+            <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient id="bg-decoration-v1-fx-1-radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(1572 205) rotate(90) scale(46)">
+            <stop stop-color="var(--color-primary)" stop-opacity="0" />
+            <stop offset="1" stop-color="var(--color-primary)" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </figure>
+  </section>
+
+ 
+  
+
+  <!-- Modal elements - one for each POI -->
+  <!-- POI 1 -->
+  <div id="poi-modal-1" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+    <div class="modal__content width-100% max-width-xxs max-width-xs@md max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+      <div class="padding-sm">
+        <div class="grid gap-sm">
+          <figure class="col-5@md">
+            <img class="block width-100%" src="assets/img/image-interest-points-img-2.jpg" alt="Image description">
+          </figure>
+  
+          <div class="col-7@md">
+            <div class="text-component">
+              <h1 class="text-lg">Cool Plant</h1>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+            </div>
+          </div>
+        </div>
+  
+        <footer class="margin-top-sm flex justify-between items-center">
+          <p>$12.00</p>
+          <a class="btn btn--primary" href="#0">Buy Now</a>
+        </footer>
+      </div>
+    </div>
+  
+    <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+      <svg class="icon icon--sm" viewBox="0 0 24 24">
+        <title>Close modal window</title>
+        <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="3" x2="21" y2="21" />
+          <line x1="21" y1="3" x2="3" y2="21" />
+        </g>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- POI 2 -->
+  <div id="poi-modal-2" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+    <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+      <div class="padding-sm">
+        <div class="text-component">
+          <h1 class="text-md">Headphones</h1>
+          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+        </div>
+  
+        <footer class="margin-top-sm flex justify-between items-center">
+          <p>$259.00</p>
+          <a class="btn btn--primary" href="#0">Buy Now</a>
+        </footer>
+      </div>
+    </div>
+  
+    <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+      <svg class="icon icon--sm" viewBox="0 0 24 24">
+        <title>Close modal window</title>
+        <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="3" x2="21" y2="21" />
+          <line x1="21" y1="3" x2="3" y2="21" />
+        </g>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- POI 3 -->
+  <div id="poi-modal-3" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+    <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+      <div class="padding-sm">
+        <div class="text-component">
+          <h1 class="text-md">Monitor</h1>
+          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+        </div>
+  
+        <footer class="margin-top-sm flex justify-between items-center">
+          <p>$129.00</p>
+          <a class="btn btn--primary" href="#0">Buy Now</a>
+        </footer>
+      </div>
+    </div>
+  
+    <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+      <svg class="icon icon--sm" viewBox="0 0 24 24">
+        <title>Close modal window</title>
+        <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="3" x2="21" y2="21" />
+          <line x1="21" y1="3" x2="3" y2="21" />
+        </g>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- POI 4 -->
+  <div id="poi-modal-4" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
+    <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
+      <div class="padding-sm">
+        <div class="text-component">
+          <h1 class="text-md">Keyboard</h1>
+          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+        </div>
+  
+        <footer class="margin-top-sm flex justify-between items-center">
+          <p>$49.00</p>
+          <a class="btn btn--primary" href="#0">Buy Now</a>
+        </footer>
+      </div>
+    </div>
+  
+    <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+      <svg class="icon icon--sm" viewBox="0 0 24 24">
+        <title>Close modal window</title>
+        <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="3" x2="21" y2="21" />
+          <line x1="21" y1="3" x2="3" y2="21" />
+        </g>
+      </svg>
+    </button>
+  </div>
+<script src="assets/js/scripts.js"></script>
+
+<div class="testimonial__block-wrapper margin-bottom-lg">
+  <blockquote class="text-lg text-center line-height-md ">
+      <br>“We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only 
+      we seek them with our eyes open.” 
+      <br><strong>- Jawaharlal Nehru</strong>       
+  </blockquote>
+
+  <svg class="icon icon--xxl color-contrast-higher opacity-10%" aria-hidden="true" viewBox="0 0 64 64"><polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"/><polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"/></svg>
+</div>
+</body>
+</html>

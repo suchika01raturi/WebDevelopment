@@ -1,0 +1,391 @@
+<!-- image interest points -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plus Button in Circle</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Professional Business Page</title>
+<style>
+    /* Reset Styles */
+    body, h1, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Button Styles */
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 24px;
+        border: 2px solid #ff6348;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: background-color 0.3s;
+        outline: none;
+        margin-top: 20px;
+    }
+
+    .button:hover {
+        background-color: #ff6348;
+    }
+
+    /* Image Styles */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Grid Layout */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+</style>
+<style>
+        /* General Styles */
+        html {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 24px;
+            border: 2px solid #ff6348;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            outline: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff6348;
+        }
+
+        /* Circle Container Styles */
+        .circle-container {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Plus Button Styles */
+        .poi__btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+            animation: spin 1s linear infinite;
+        }
+        /* Positioning the Plus Button */
+        .poi__item {
+            position: absolute;
+        }
+
+        /* Adjusting Position of Plus Buttons */
+        .poi__item:nth-child(1) {
+            top: 30%;
+            left: 8%;
+        }
+
+        .poi__item:nth-child(2) {
+            top: 71%;
+            left: 45%;
+        }
+
+        .poi__item:nth-child(3) {
+            top: 20%;
+            left: 90%;
+        }
+
+        .poi__item:nth-child(4) {
+            bottom: 63%;
+            right: 20%;
+        }
+
+        .poi__item:nth-child(5) {
+            top: 40%;
+            left: 70%;
+        }
+
+        .poi__item:nth-child(6) {
+            top: 10%;
+            left: 62%;
+        }
+
+        .poi__item:nth-child(7) {
+            top: 30%;
+            left: 28%;
+        }
+
+        .poi__item:nth-child(8) {
+            top: 40%;
+            left: 42%;
+        }
+    </style>
+
+<style>
+  .circle-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }  
+  .poi__item {
+    position: absolute;
+  }
+
+  .poi__btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+<style>
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Styling for the Text */
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .main-heading {
+    background-color: #010101;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    animation: fadeInUp 1s ease forwards;
+  }
+</style>
+</head>
+<body>
+
+  <section class="position-relative z-index-1 padding-y-xxl" data-theme="secondary">
+    
+
+
+    <div class="container max-width-adaptive-lg">
+      <div class="margin-bottom-lg">
+        <div class="text-center">
+            <h1 class="main-heading" style="background-color: #010101; padding: 10px; font-family: Arial, sans-serif; margin-bottom: 20px; color: #ffffff;">Equipments for trekking and Adventuring<em class="font-italic"></em></h1>
+            <p class="sub-heading" style="font-size: 30px; margin-top: 20px; margin-bottom: 20px; color: #ffffff;">Click on the gear to know the prices of products</p>
+        </div>
+    </div>
+    
+  
+      <figure class="position-relative z-index-1">
+        <img class="block width-100%" src="assets\img\GEAR.jpg" alt="Product Image">
+        <ul class="poi js-poi">
+          <li style="top: 30%; left: 8%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href = 'https://www.amazon.in/s?k=sleeping+mat+trek&crid=Z4L6Y0Z48DX1&sprefix=sleeping+mat+tre%2Caps%2C254&ref=nb_sb_noss_2';" class="reset poi__btn" aria-label="Point 1. Click for more info." aria-controls="poi-modal-1">+</button>
+            </div>
+          </li>
+  
+          <li style="top: 71%; left: 45%;" class="poi__item js-poi__item">
+            <div class="-container">
+              <button onclick="window.location.href = 'https://www.amazon.in/Gear-Voyager-Backpack-Drawstring-Black-Yellow/dp/B0C27PLT88/ref=sr_1_10?crid=B9MR4TH4VO4N&dib=eyJ2IjoiMSJ9.7BUqo7bzmk3AhXSzTxd3sX4ArdugCvUS4qEIRrMQWxkq9MTPOtycZa6tG4vfhy6n_t0RiSRHs8GU4dCV4uHYS0d3xFahhSqecbYfkJM5k7WlOUx1qKYG7UmK1Qtd92SAzdCfFKBgTKmE0taPHnFEyX2X4lrvjMq0s_1--1ckZnA2684IN1LkfZoSydIqzOXweLCgHv5pfri5bzplFZ8E7D_jDlJhaIerRi-X-af61eoxPebC0ZxyVqxZMssd5DTBWy7f1xR_Zpxh7qAq3A1YDca1dBAhomGWP6Ehg56vqbo.97xs6JZ5aM64o6MRxwgcmvAAekVQ9701XmSchyKo2mQ&dib_tag=se&keywords=small+round+bag+for+trekking&qid=1715247195&sprefix=smallround+bag+for+trekking%2Caps%2C348&sr=8-10';" class="reset poi__btn" aria-label="Point 2. Click for more info." aria-controls="poi-modal-2">+</button>
+            </div>
+          </li>
+          
+          <li style="top: 20%; left: 90%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/Lista-Adjustable-Trekking-Hiking-Multi-Colour/dp/B07TF4GLR1/ref=sr_1_16?crid=2C4LPJWI7S47U&dib=eyJ2IjoiMSJ9.3bjjPEwLMS13bkFvdeMPsAzkYs8Fa4vfshWpFsJ6F-nUbXdmtjZX2XFRPFnAiThMv7GKOvlxcLL1Cuan9Smoj4KQ6lq2qCrt9rq3at17GBv3zwKv69xwre5qjsz5WHYxUH8Tesdv3f28piquzkRSHgSUAGvs17Xd-SgIBPqDhTJeTo12XPC3cqlNsfp8aEc_lFWDMswkbQSXyVdzwcLa0tZUDF5LrqAUFhqI-ce28JnM6ovP88B8QHgL-_M0ORfyJZbISJuUlO7-n_MeoRgdkeOFwFRv_nGdSOUzIgabqgI.cyOKIlDfn5fx_tso60MdmWOqEuPWn20n1EtbiJT2Pfs&dib_tag=se&keywords=sharp+grip+tool+for+snow+trekking&qid=1715247576&sprefix=sharp+grip+tool+for+snow+trekking%2Caps%2C293&sr=8-16';" class="reset poi__btn" aria-label="Point 3. Click for more info." aria-controls="poi-modal-3">+</button>
+            </div>
+          </li>
+  
+          <li style="bottom: 63%; right: 20%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/Linist-Lightweight-Aircraft-Grade-Aluminum-Trekking/dp/B0B5KY3JMK/ref=sr_1_1_sspa?crid=1MJW0YXSN';" class="reset poi__btn" aria-label="Point 4. Click for more info." aria-controls="poi-modal-4">+</button>
+            </div>
+          </li>
+
+          <li style="top: 40%; left: 70%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo3OTExMzY2NzAzNzMyMTI5OjE3MTUyNjI3MzI6c3BfYXRmOjIwMTMxNTcyMDY1NTk4OjowOjo&url=%2FGoPro-HERO10-Black-Waterproof-Stabilization%2Fdp%2FB09JWL7FKV%2Fref%3Dsr_1_2_sspa%3Fcrid%3D32MYTI3XWHK7R%26dib%3DeyJ2IjoiMSJ9.x6WzKsXgpmRg6h-KeSY7jmObjunpmC7eGxmvETKvmPsEcG4pfrjVEp2YtPw8FHETX9MLr_eOzsPW-0_-oSSd4fbV2-aNp2cU4j2UIMN56Mvu-stbNNK5Ym9bLMVb5JoS2kO76icim9WteXQnWKz6E50PaD68LOx4k1G-y2sWk_-Y9rgO9HOfB3Uf_Nedfi4pcAG2GPffRprpeYXr-o9O2isD0KdiIBNJGt3ujgaxtic.Ry-TPx4Y-dBa_fCxtDYbMC43iuuNV4cJYC-YojZrBns%26dib_tag%3Dse%26keywords%3Dtrekking%2Bgo%2Bpro%26qid%3D1715262732%26sprefix%3Dtrekking%2Bgo%2Bpr%252Caps%252C310%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1';" class="reset poi__btn" aria-label="Point 5. Click for more info." aria-controls="poi-modal-5">+</button>
+            </div>
+          </li>
+
+          <li style="top: 10%; left: 62%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo0ODU0ODUwNDgxMDAwMTI5OjE3MTUyNjI2NjM6c3BfYXRmOjMwMDA5Mjc1NTM1MzAzMjo6MDo6&url=%2FOligitdi-Outdoor-Climbing-Rappelling-Mountaineering%2Fdp%2FB0CM6G76HY%2Fref%3Dsr_1_1_sspa%3Fcrid%3D2YQE0H2UU9UEO%26dib%3DeyJ2IjoiMSJ9.3E6jHRS61Q1QLwV2CPkegxpc3DxoBpp65REjgVWtPjpXi60Kox3AsolX-SVchDbEa-hX9JVA1_s-nfLuEDhTTN4FOKkUrJzL5XAtsKDMISS1zrtILIYLPqCf9xwZXUnBzn8q2N5taiCbOx6CJ13AY10X8dl7suDfmhqwJk55kM8D3GoG__odj3uWZDBpOxdmusy9_GawDmEm2-pgJf9D_kKbEorjary-krNhQYuvcsU9jjoyHBCHDnAmjtIuw2X_6ikuuzJSc2n_-hbB-SjoGqFqigv0Dzhe_K4VCOpjr5I.vKQFnnlRG1_y12PkvBIzGBNOGL2R1x8g34zGSQ9Jsa8%26dib_tag%3Dse%26keywords%3Dtrekking%2Brope%26qid%3D1715262663%26sprefix%3Dtrekking%2Brop%252Caps%252C280%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1';" class="reset poi__btn" aria-label="Point 6. Click for more info." aria-controls="poi-modal-6">+</button>
+            </div>
+          </li>
+
+          <li style="top: 30%; left: 28%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozODQ3NjU5Njg5NTYwMTI5OjE3MTUyNjI0OTU6c3BfYXRmOjMwMDEzNjQ3ODcyNTAzMjo6MDo6&url=%2FNOVICZ-HK001-TRAWOC-YELLOW-Yellow-Rucksack%2Fdp%2FB076LZ8W2F%2Fref%3Dsr_1_3_sspa%3Fadgrpid%3D1326012633047948%26dib%3DeyJ2IjoiMSJ9.KR14XZOkVdBnpIZ9Ap16NpNUAsOLXDvgMYlbzjhdGg7hl-krbuM8fqlCB0iIy3Zc2NKvKVz7kBIxmCuS_SL1VQYA24QfriKl9i5-TTtyh2IWPEchXhp97dhq1yxyVA5ib6WQ8vvt5mTcS9isNSa_4T9GtfAgeRnKC-T1mf8voW_3Mx6LC-foDgcdwNPBauiolNG2y1Hnz4xlPLNAYrYmV2Sw2TH6dODDbjWk3-Cp-ZZTcBtCjcNqjpn5XGxOujm0wwVdVbxNmjHAx0bFJs78JtXFuQY-bPz6x9M0U2-taxc.WtzgCYLj_fBPR5H5D5kjfTriCkrlHacABYQdE5dQ_NA%26dib_tag%3Dse%26hvadid%3D82876058871671%26hvbmt%3Dbe%26hvdev%3Dc%26hvlocphy%3D143821%26hvnetw%3Do%26hvqmt%3De%26hvtargid%3Dkwd-82876681161158%253Aloc-90%26hydadcr%3D23844_2357912%26keywords%3Dtrekking%2Bbag%2Bamazon%26qid%3D1715262495%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1';" class="reset poi__btn" aria-label="Point 7. Click for more info." aria-controls="poi-modal-7">+</button>
+            </div>
+          </li>
+
+          <li style="top: 40%; left: 42%;" class="poi__item js-poi__item">
+            <div class="circle-container">
+              <button onclick="window.location.href ='https://www.amazon.in/sspa/click?ie=UTF8&spc=MToyOTk3MzEyMTAzMDI5MTI5OjE3MTUyNjM5MTE6c3BfYXRmOjIwMDQzODQ5MzM2ODk4OjowOjo&url=%2FDIGITEK%25C2%25AE-DTR-260-GT-Flexible%2Fdp%2FB08LPJZSSW%2Fref%3Dsr_1_2_sspa%3Fcrid%3D32ISME7CC4OAB%26dib%3DeyJ2IjoiMSJ9.infWxc_FwcitH7ZRy1ghvjq2NLpJuKkAjvjs35CmwpRINctjD4dQ-2BZsZkrf0Qby4STMV-U4rLhrTNCIjXvkfOK0b0z2GO9JaHEoHhuIvcoN177UrMs0tG_Iv-hhVa0mXbpy5P0XcSI5lwRcqTp078zIaxsfLRGm2fFcVECMMWPvY7OmHwdzgUI_vWAFhueqWQzqNLN5KEytWJtuDrXol9ZPbZ7IyLSA9-g0zcghC4.bLebie93ZFHepbAkVgVJYhG2-BAkKkpIFFXHNybBnU4%26dib_tag%3Dse%26keywords%3Dgorilla%2Btripod%26qid%3D1715263911%26sprefix%3Dgorilla%2Btripo%252Caps%252C319%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1';" class="reset poi__btn" aria-label="Point 8. Click for more info." aria-controls="poi-modal-8">+</button>
+            </div>
+          </li>
+          <!DOCTYPE html>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Button for Another Website</title>
+          <style>
+            /* Button Styles */
+            .button {
+              display: inline-block;
+              padding: 10px 20px;
+              background-color: #3498db; 
+              color: #fff;
+              text-decoration: none;
+              border-radius: 5px;
+              font-size: 24px;
+              
+              border: 2px solid #ff6348;
+              box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+              cursor: pointer;
+              transition: background-color 0.3s;
+              outline: none;
+              margin-top: 20px;
+            }
+          
+            .button:hover {
+              background-color: #ff6348;
+            }
+          
+            /* Container Styles (optional) */
+            .container {
+              text-align: center;
+              margin-top: 50px;
+            }
+          </style>
+          </head>
+          <body>
+          
+          
+          </body>
+          </html>
+          
+
+
+  
