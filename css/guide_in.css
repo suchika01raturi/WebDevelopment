@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("C:\Users\dell\Desktop\123\oracleSquad\proj\main\assets\img\background_new.jpg"); /* relative path to the image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+/* rest of your CSS styles remain the same */
+header {
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent background for header */
+    color: white;
+    padding: 10px 0;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* stylish font for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow for headings */
+    font-size: 2rem; /* increase font size for headings */
+}
+p {
+    font-size: 1.2rem; /* increase font size for paragraphs */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow for headings */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 20px 0;
+}
+section {
+    padding: 20px 0;
+}
+.tour {
+    margin-bottom: 20px;
+}
+
+.tour img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 1.4rem; /* increase font size for paragraphs */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow for paragraphs */
+    margin-bottom: 20px; /* add space below each paragraph */
+}
+
